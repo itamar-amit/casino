@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>casino</title>
+</head>
+<body>
+    <div id= main>
+        <div id="rules">
+            <h1 id="titel">ברוך הבא</h1>
+            <br>
+            <h2 id="titel">הזן נתוני רולטה</h2>
+            <label for="">מינימום שולחן:</label>
+            <input id="min" type="text" placeholder="הכנס סכום">
+            <label for="">מינימום שליש:</label>
+            <input id="third" type="text" placeholder="הכנס סכום">
+            <label for="">מקסימום שולחן:</label>
+            <input id="max" type="text" placeholder="הכנס סכום">
+        </div>
+        <div id="choice">
+            <select id="selc">
+                <option value="solid">סולידי</option>
+                <option value="agresive">אגרסיבי</option>
+            </select>
+            <button id="save">שמירת נתונים</button>
+        </div>
+        <div id="gambling">
+            <h2>חישוב הימור</h2>
+            <table id="table">
+                <tr>
+                    <th>מס' סיבוב</th>
+                    <th>הימור לשליש</th>
+                    <th>הימור ל 0</th>
+                    <th>רווח צפוי</th>
+                    <th>הפסד צפוי</th>
+                    <th>רווח צפוי ל 0</th>
+                </tr>
+            </table>
+        </div>
+        <div id="results">
+            <h2>לוח תוצאות</h2>
+            <input type="text" id="entry" placeholder="הכנס סכום כניסה">
+            <input type="text" id="outing" placeholder="הכנס סכום יציאה" >
+            <button id="saveResults">שמור תוצאה</button>
+            <button id="showResults">הצג תוצאות קודמות</button>
+            <div id="historyResults"></div>
+            <h3 id="resualltSum"></h3>
+        </div>
+        <div id="rm">
+            <button id="rmAll">מחיקת כלל הנתונים</button>
+            <button id="rmCasino">מחיקת נתוני קזינו בלבד</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

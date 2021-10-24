@@ -1,0 +1,58 @@
+html,body,h1,h2,h3,h4,h5,h6,p
+{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main {
+    border: solid 1px;
+    background-color: rgb(211, 228, 192);
+    margin-top: 40px;
+}
+#rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#choice{
+    text-align: center;
+    margin-top: 5px;
+}
+#gambling{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table, th, td {
+    border: 1px solid black;
+}
+#results{
+    margin-top: 10px;
+    text-align: center;
+}
+#rm{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+
+    #entry , #outing{
+    width: 48vw ;    
+    }
+    #saveResults ,#showResults {
+        margin-top: 5px;
+    }
+} 
